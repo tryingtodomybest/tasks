@@ -1,0 +1,57 @@
+<!DOCTYPE html> 
+<html> 
+ <head> 
+  <meta charset="utf-8"> 
+  <title>registration</title> 
+  <link rel="stylesheet" type="text/css" href="task2.css" />
+</head>
+  <body>
+    <div class="container"> 
+        <form action="#" class="form">
+            <h1>Регистрация</h1>
+            <hr class="solid">
+        <div class="row">
+            <label for="email"><b>E-mail</b></label>
+            <div class="row">
+            <input type="email" name="email" style="width: 360px" placeholder="example@site.domain" required/>
+        </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-half">
+                <label for="password"><b>Пароль</b></label>
+                <input type="text" name="password" placeholder="password" required/>
+
+            </div>
+            <div class="col-half">
+                <label for="password2"><b>Повторите пароль</b></label>   
+                <input type="text" name="password2" placeholder="password" required/>
+            </div>
+        </div> 
+        <br>
+        <div class="row">
+        <label for="fullname"><b>ФИО</b></label>
+        </div>
+        <div class="row" id="fullname">
+        <input type="text" name="fullname" style="width: 360px" placeholder="Игорев Игорь Игоревич" required/>
+        </div>
+        <br>
+    <div class="row">
+        <label for="age"><b>Возраст</b></label>
+    </div>   
+    <div class="row"> 
+        <input type="number" name="age"  style="width: 175px" placeholder="18" min="0" max="150" />
+    </div>
+        <hr class="solid"> 
+        <div id="row">
+            <div class="col-half">
+                <button id="send" type="submit" value="send">Отправить</button>
+            </div>
+            <div class="col-half">
+               <button id="reset" type="reset" value="clear">Отмена</button>
+            </div>
+        </div>
+ </form>
+</div>
+  </body>
+</html>
