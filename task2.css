@@ -1,0 +1,113 @@
+form {
+    position: relative;
+    width: 400px;
+    height: 448px;
+
+    background: #9C9C9C;
+    border: 2px solid #626262;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+h1 {
+    position: static;
+    left: 20px;
+    top: 20px;
+    padding-left: 20px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+}
+
+hr {
+    margin-block: 20px;
+}
+
+ #solid {
+     border: 1px solid #FFFFFF;
+} 
+
+.row::after {
+    content:"";
+    display: table;
+    clear: both;
+}
+
+.row::before {
+    clear: both;
+}
+
+.col-half:first-child {
+    float: left;
+    width: 175px;
+    margin-top: 6px;
+}
+
+.col-half:last-child {
+    float: right;
+    width: 175px;
+    margin-top: 6px;
+    margin-right: 35px;
+}
+
+
+input {
+    position: relative;
+    margin-inline-end: 20px;
+    margin-inline-start: 20px;
+    height: 28px;
+
+    background: #FFFFFF;
+    border: 1px solid #9C9C9C;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+
+label {
+    margin-left: 20px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+
+button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px 12px;
+}
+
+#send:hover {
+    background: #CCCCCC;
+}
+
+#reset:hover {
+    background: #FFFFFF;
+}
+
+  #send {
+    background: #616161;
+    width: 95px;
+    height: 32px;
+    border: 1px solid #616161;
+    margin-left: 20px;
+    margin-block-end: 20px;
+  }
+
+  #reset {
+    background: #CCCCCC;
+    width: 74px;
+    height: 32px;
+    border: 1px solid #CCCCCC;
+    float: right;
+    margin-block-end: 20px;
+    margin-inline-end: -20px;
+  }
+
