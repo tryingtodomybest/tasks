@@ -1,0 +1,40 @@
+/*Painting, trimming and position*/
+
+   h3 {
+    background: linear-gradient(180deg, #686868 0%, #B3B3B3 50.52%, #686868 100%);
+    display: inline;
+    width: 300px;
+    height: 60px;
+    position: relative;
+    float: left;
+    clip-path: polygon(96% 0, 100% 50%, 96% 100%, 0% 100%, 4% 50%, 0% 0%);
+}
+
+/*Centering, establishing the color and the font of the text*/
+
+h3 {
+    color: white;
+    font-family: Roboto;
+    text-align: center;
+    line-height: 60px;
+}
+
+/*Trimming each of the blocks*/
+
+h3:first-child {
+    width: 310px;
+	clip-path: polygon(96% 0%, 100% 50%, 96% 100%, 0% 100%, 0% 0%);
+}
+
+h3:last-of-type {
+	clip-path: polygon(100% 0, 100% 100%, 0% 100%, 4% 50%, 0% 0%);
+}
+
+h3:nth-child(even) {
+    width: 310px;
+}
+/*To activate "button"*/
+
+h3:active {
+    background: linear-gradient(180deg, #2EA239 0%, #62FD71 50.52%, #2EA139 100%);
+   }
